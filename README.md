@@ -9,9 +9,18 @@ person 에 이름 전번
 stdent 에 person을 상속 시킨다 [student 에 학번 학년 반 작성]
 scora 에 student를 상속 시킨다
 
- 이름	   학번	    국어	과학  수학  영어
-최진철  	08061114     80	 50     60    70
-유상철	07056112     50     30     60    100
-김병지	07041125     60     50     30    85
-이운재	06012851     45     15     80    46
-황보관    10048215    100     50    30    84
+
+class person :
+    name = ""    #name이 스트링 문자열이라 인식
+    age = -1    #선언은 되어있지만 아무 값도 들어가있지 않음
+    phone = ""
+  
+    def __init__(self, n, a, p) : #생성자를 넣어준다 매소드가 주어져야한다
+    self.name = n
+    self.age = a
+    self.phone = p
+while True :
+    n = input("Name :")
+    a = input("나이 : ")
+    p = input("번호: ")
+ 
